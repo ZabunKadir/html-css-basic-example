@@ -1,0 +1,891 @@
+/* Reset Css */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  letter-spacing: 0.05rem;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", cursive;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/* CSS kodlari */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/header.jpg");
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.logo i {
+  font-size: 26px;
+}
+.menu {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.menu i {
+  font-size: 24px;
+  color: white;
+}
+.slider-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.slider-text h1 {
+  font-size: 72px;
+  color: white;
+  letter-spacing: 1px;
+}
+.slider-text p {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.slider-text a:hover {
+  background-color: crimson;
+  width: 100px;
+  transition: 300ms all;
+}
+.slider-text a:hover i {
+  margin-right: 10px;
+}
+.slider-text a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 300ms all;
+}
+.slider-text a i {
+  font-size: 10px;
+  margin-right: 5px;
+}
+.slider-controls span {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.slider-controls span:not(:last-child) {
+  margin-right: 5px;
+}
+/* Our Services */
+#our-services {
+  padding: 100px 0;
+}
+.page-title {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-title-icon {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+.page-title-icon hr {
+  width: 70px;
+  height: 1px;
+  background-color: #c4c4c2;
+}
+.page-title-icon i {
+  margin: 0 15px;
+}
+.page-title-text p {
+  text-align: center;
+  color: #444444;
+  font-weight: 600;
+}
+.our-services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-services-item-image {
+  margin: 20px;
+  position: relative;
+}
+.our-services-item-image img {
+  width: 170px;
+  height: 170px;
+}
+.animation {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.our-services-item-image i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.our-services-item-text {
+  text-align: center;
+  font-weight: bold;
+}
+.our-services-item-text h2 {
+  margin-bottom: 20px;
+}
+/* About start */
+section#about {
+  padding: 100px 0;
+  background-color: #f25767;
+}
+.white-color {
+  color: white !important;
+}
+.about-item {
+  height: 480px;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.about-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 240px;
+  text-align: center;
+}
+.about-item-content i {
+  margin: 20px 0px 20px 0px;
+}
+.about-item-content p {
+  font-weight: 600;
+}
+.about-item-image {
+  height: 240px;
+  overflow: hidden;
+}
+.about-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.what-we-do {
+  height: 360px;
+}
+.what-we-do h2 {
+  color: #f25767;
+}
+.about-item-content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 50px;
+  background: none;
+  border: 1px solid #f25767;
+  color: #f25767;
+  font-weight: bold;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+.about-item-content-button i {
+  margin-right: 5px;
+  color: #f25767;
+}
+/* Portfolio Start */
+section#portfolio {
+  padding: 100px 0;
+}
+.portfolio-items-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.portfolio-items-2 {
+  display: grid;
+  grid-template-columns: auto max-content auto;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  margin-top: -50px;
+}
+.portfolio-items-2 > .portfolio-item:first-child {
+  justify-self: flex-end;
+  margin-right: 30px;
+}
+.portfolio-items-2 > .portfolio-item:last-child {
+  justify-self: flex-start;
+  margin-left: 30px;
+}
+.portfolio-item {
+  width: 255px;
+  height: 292px;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 76%, 50% 100%, 0 75%, 0 25%);
+}
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Ara Kesit Start */
+section#arakesit {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://a-static.besthdwallpaper.com/ladin-koknar-ormanlari-duvar-kagidi-2560x1440-56964_51.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#arakesit p {
+  font-size: 24px;
+  color: white;
+}
+section#arakesit a {
+  width: 90px;
+  height: 50px;
+  border: 1px solid white;
+  line-height: 50px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  border-radius: 3px;
+  margin-top: 50px;
+  font-weight: 600;
+  color: white;
+  transition: 300ms all;
+}
+section#arakesit a:hover {
+  background-color: white;
+  color: black;
+}
+section#arakesit i {
+  margin-right: 5px;
+}
+/* Skills Start */
+#skills {
+  padding: 100px 0;
+  position: relative;
+}
+#skills .row {
+  display: flex;
+  flex-direction: row;
+  margin-right: -100px;
+}
+.macbook {
+  position: absolute;
+  right: -200px;
+  top: 50%;
+}
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 520px;
+}
+.skills-item {
+  background: url("../img/Skills/Polygon1.png") no-repeat center center;
+  width: 120px;
+  height: 137px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  position: relative;
+}
+.skills-item i {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.skills-item p {
+  font-size: 16px;
+}
+.skills-item span {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  background-color: #f25767;
+  right: 5%;
+  top: 70%;
+  border: 2px white solid;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+}
+.last {
+  color: white;
+  background: url("../img/Skills/Polygon2.png") no-repeat center center;
+}
+/* Team Start */
+section#team {
+  margin-top: 200px;
+  padding: 100px 0;
+  background-color: #f25767;
+}
+.team-item {
+  height: 480px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin: 0 30px 0 30px;
+  position: relative;
+  background-color: black;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+}
+.team-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 300ms all;
+}
+.team-item-overlay {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background-color: #6c26ff;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  transition: 500ms all;
+}
+.team-item-overlay h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.team-item-social ul li {
+  display: inline-block;
+  margin: 30px 10px 30px 10px;
+}
+.team-item-social ul li a {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px white solid;
+  color: white;
+  border-radius: 100%;
+}
+.team-item:hover .team-item-overlay {
+  bottom: 0;
+}
+.team-item:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.team-item-social ul li a:hover {
+  background-color: white;
+  color: #444;
+}
+@media only screen and (max-width: 768px) {
+  .team {
+    flex-direction: column;
+  }
+  .team-item {
+    margin: 30px 0px 30px 0px;
+  }
+}
+/* Pricing  Start*/
+#pricing {
+  padding: 100px 0;
+}
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.pricing-item {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 3px;
+  transition: 300ms all;
+}
+.pricing-item h1 {
+  font-size: 48px;
+}
+.pricing-item h1 span {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.pricing-item h2 {
+  margin-bottom: 30px;
+}
+.pricing nav ul li {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.platinum {
+  color: #f25767;
+}
+.pricing-item a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  border: 1px solid #f25767;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 50px;
+  color: #f25767;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: 300ms all;
+}
+.pricing-item a i {
+  margin-right: 5px;
+}
+.pricing-item a:hover {
+  background-color: #f25767;
+  color: white;
+}
+.pricing-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff;
+}
+.pricing-item-middle-line {
+  text-decoration: line-through;
+  color: #aaa;
+}
+@media only screen and (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-item {
+    margin: 20px 0 20px 0;
+    width: 80%;
+  }
+}
+/* Question Start */
+#question {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://a-static.besthdwallpaper.com/ladin-koknar-ormanlari-duvar-kagidi-2560x1440-56964_51.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 680px;
+  max-height: auto;
+}
+.question{
+  display: flex;
+  align-items: center;
+}
+.question-left{
+  width: 60%;
+}
+.question-left h1{
+  color: white;
+  margin-bottom: 30px;
+}
+
+.acordion{
+  color: white;
+}
+.acordion-list{
+  position: relative;
+}
+.acordion-title{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin: 20px 0 20px 0;
+}
+.acordion-title i{
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 300ms all;
+}
+.acordion-input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+.acordion-content{
+  line-height: 30px;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 40px;
+  transition: 300ms all;
+}
+.acordion-input:checked + .acordion-title + .acordion-content{
+  max-height: 300px;
+}
+.acordion-input:checked + .acordion-title i{
+  transform: rotate(180deg);
+}
+/* Question-Right Start */
+form,input, textarea,select{
+  margin:0;
+  padding: 0;
+  outline: none;
+  background: none;
+  font-size: 14px;
+  font-family: "Poppins",sans-serif;
+}
+.question-right h2{
+  color: white;
+}
+.question-right{
+  width: 350px;
+  margin-left: 80px;
+  background-color: #f25767;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.question-right form input, .question-right form textarea{
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.question-right form textarea{
+  resize: none;
+  color: white;
+}
+.question-right form input[type="submit"]{
+  border: 1px solid white;
+  padding: 20px;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: 300ms all;
+}
+.question-right form input[type="submit"]:hover{
+  background-color: white;
+  color: #f25767;
+}
+.question-right form input::placeholder,.question-right form textarea::placeholder{
+  color: white;
+}
+@media only screen and (max-width:768px){
+  .question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .question-left{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .question-right{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+  }
+}
+/* Blog Start */
+#blog{
+  padding: 100px 0;
+}
+.blog{
+  display: flex;
+  flex-direction: column;
+}
+.blog-items{
+  display: flex;
+  flex-direction: row;
+}
+.blog-item{
+  margin: 0 30px 0 30px;
+  background-color: black;
+}
+.blog-item img:hover{
+  opacity: 0.5;
+}
+.blog-item img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  transition: 300ms all;
+}
+.blog-content{
+  margin-top: -10px;
+  width: 350px;
+  height: 50%;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.blog-content i{
+  margin: 10px 0 30px 0;
+}
+.blog-middle .blog-content{
+  background-color: #f25767;
+}
+.blog-button{
+  margin: 100px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-button button{
+  margin-left: 80px;
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  background: none;
+  border: 1px solid #f25767;
+  color: #f25767;
+  transition: 300ms all;
+  font-weight: 600;
+}
+.blog-button button:hover{
+  background-color: #f25767;
+  color: white;
+}
+.blog-button i{
+  margin-right: 5px;
+}
+.blog-slider{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slider-left{
+  width: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+.slider-items{
+  width: 90%;
+  justify-content: center;
+}
+.slider-item{
+  position: relative;
+}
+.slider-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-image span{
+  position: absolute;
+  padding: 60px;
+  display: flex;
+  font-size: 18pt;
+  color: white;
+  font-weight: 600;
+}
+.slider-middle{
+  width: 240px;
+  height: 240px;
+  margin: 0 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.slider-middle span{
+  margin-top: -30px;
+  font-weight: 600;
+}
+.slider-right{
+  width: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* Contact Start */
+#contact{
+  padding: 100px 0;
+  background-color: #f25767;
+  height: 700px;
+}
+.contact{
+  width: 100%;
+}
+.page-title-icon-two{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+.page-title-icon-two a{
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
+  border: 1px solid white;
+  margin: 0 10px;
+}
+.page-title-icon-two a:hover{
+    background-color: white;
+    color: #f25767;
+}
+.page-title-icon-two i{
+
+  font-size: 22px;
+  
+}
+.contact-form{
+  position: absolute;
+  width:60%;
+  margin: 0 100px;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.contact-form form{
+  width: 100%;
+  padding: 20px;
+}
+.contact-form ul li{
+  padding: 20px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  transition: 300ms all;
+}
+.contact-form ul li input{
+  font-size: 18px;
+  font-weight: 800;
+  width: 90%;
+  margin-top: 10px;
+}
+.contact-form ul li input:hover{
+  color: #f25767;
+}
+.contact-form ul li:hover{
+  border-color: #f25767;
+  color: #f25767;
+}
+.contact-form ul li textarea{
+  font-size: 18px;
+  font-weight: 800;
+  width: 90%;
+  resize: none;
+  height: 150px;
+}
+.contact-form ul li textarea:hover{
+  border-color: #f25767;
+  color: #f25767;
+}
+.contact-form ul li i{
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.contact-button{
+  float: right;
+  margin: 40px 0;
+transition: 300ms all;
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+  background-color: #f25767;
+  color: white;
+}
+.contact-button i{
+  margin-right: 10px;
+}
+.contact-button:hover{
+  background-color: white;
+  color: #f25767;
+  border: 1px solid #f25767;
+}
+#map img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0;
+  margin: 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width:768px){
+  .contact-form{
+    margin: 0 40px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+}
